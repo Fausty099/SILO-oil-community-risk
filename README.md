@@ -310,7 +310,7 @@ jupyter notebook SILO_project.ipynb
 
 <div align="center">
 
-**Faustinaafua Afriyie**
+**Faustina Afua Afriyie**
 BSc Data Science & Analytics — Level 300
 Ghana Communication Technology University (GCTU), Accra, Ghana
 

@@ -58,11 +58,11 @@ That's not just a number. It's a reason. That's what makes SILO actionable.
 
 | What Already Exists | SILO |
 |---|---|
-| Oil spill detection via satellite | ✅ Widely studied |
-| Community health impacts (qualitative) | ✅ Widely studied |
-| General political conflict prediction | ✅ Widely studied |
-| Resource curse economics (macro-level) | ✅ Widely studied |
-| **SLO erosion as a predictive ML target fusing environmental + conflict signals at sub-national level in West Africa** | ❌ **Never done. This is SILO.** |
+| Oil spill detection via satellite |  Widely studied |
+| Community health impacts (qualitative) |  Widely studied |
+| General political conflict prediction |  Widely studied |
+| Resource curse economics (macro-level) |  Widely studied |
+| **SLO erosion as a predictive ML target fusing environmental + conflict signals at sub-national level in West Africa** | * **Never done. This is SILO.** |
 
 ---
 
@@ -197,11 +197,11 @@ XGBClassifier(
 
 | State | Year | Risk Score | Confirmed Erosion |
 |---|---|---|---|
-| Edo | 2019 | **97.8%** | ✅ |
-| Akwa Ibom | 2015 | 95.5% | ✅ |
-| Delta | 2016 | 94.8% | ✅ |
-| Bayelsa | 2019 | 94.5% | ✅ |
-| Edo | 2014 | 94.3% | ✅ |
+| Edo | 2019 | **97.8%** | Confirmed |
+| Akwa Ibom | 2015 | 95.5% | Confirmed |
+| Delta | 2016 | 94.8% | Confirmed |
+| Bayelsa | 2019 | 94.5% | Confirmed |
+| Edo | 2014 | 94.3% | Confirmed |
 
 All confirmed SLO erosion cases received risk scores above **94%**.
 
@@ -255,9 +255,9 @@ Phase 2  │  Spatial Joining   (point data → state polygons)
 Phase 3  │  Feature Engineering  (24 features across 3 streams)
 Phase 4  │  Exploratory Data Analysis  (6 visualisations)
 Phase 5  │  Label Construction  (SLO erosion proxy target)
-Phase 6  │  Model Training  (XGBoost + temporal split)      ✅
-Phase 7  │  SHAP Explainability  (4 explanation charts)     ✅
-Phase 8  │  Interactive Risk Map  (Folium choropleth)       ✅
+Phase 6  │  Model Training  (XGBoost + temporal split)      
+Phase 7  │  SHAP Explainability  (4 explanation charts)     
+Phase 8  │  Interactive Risk Map  (Folium choropleth)       
 ```
 
 ---

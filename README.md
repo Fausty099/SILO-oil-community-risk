@@ -86,7 +86,7 @@ Nigeria flared **132.40 BCM** of gas over the study period — declining 53% fro
 ---
 
 ### Conflict & Flaring by State
-![Phase 2 Summary](SILO maps % figures/phase2_summary.png)
+![Phase 2 Summary](https://github.com/Fausty099/SILO-oil-community-risk/blob/370eaf0c0ecc5d030d11841569721bf2bd24631a/phase2_summary.png)
 
 Rivers State leads in both cumulative flare volume and conflict events — the exact compound risk pattern SILO is designed to detect early.
 

@@ -100,7 +100,7 @@ The conflict intensity heatmap (bottom left) reveals **Delta 2016** and **Edo** 
 ---
 
 ### SLO Erosion Detection
-![SLO Labels](SILO maps % figures/phase5_labels_v2.png)
+![SLO Labels](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase5_labels_v2.png)
 
 **7 SLO erosion events detected** across 4 states:
 - Edo: **3 events** (highest frequency)
@@ -111,7 +111,7 @@ The conflict intensity heatmap (bottom left) reveals **Delta 2016** and **Edo** 
 ---
 
 ### What the Model Learned
-![Feature Importance](SILO maps % figures/phase6_feature_importance.png)
+![Feature Importance](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase6_feature_importance.png)
 
 The XGBoost model's top predictors:
 
@@ -128,7 +128,7 @@ The XGBoost model's top predictors:
 ---
 
 ### SHAP Explainability — Which Signals Drive Risk?
-![SHAP Importance](SILO maps % figures/phase7_shap_importance.png)
+![SHAP Importance](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase7_shap_importance.png)
 
 SHAP (SHapley Additive exPlanations) opens the black box. Every prediction comes with a full breakdown of which features contributed — and by how much.
 
@@ -140,14 +140,14 @@ SHAP (SHapley Additive exPlanations) opens the black box. Every prediction comes
 | Conflict Accel | 1.271 | Speed of escalation matters more than absolute level |
 | Total Fatalities | 0.654 | Prior violence carries forward as risk memory |
 
-![SHAP Beeswarm](SILO maps %26 figures/phase7_shap_beeswarm.png)
+![SHAP Beeswarm](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase7_shap_beeswarm.png)
 
 Red dots = feature pushes risk UP. Blue = pushes risk DOWN. High protest activity (red, right side) is the clearest signal of future SLO erosion.
 
 ---
 
 ### Individual Prediction: Why is Edo 2019 at 97.8% Risk?
-![SHAP Waterfall](SILO maps % figures/phase7_shap_waterfall.png)
+![SHAP Waterfall](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase7_shap_waterfall.png)
 
 ```
 Baseline (average risk)      →  0.879
@@ -162,7 +162,7 @@ Final score                  →  3.818  →  97.8% risk
 ```
 
 ### High Risk vs Low Risk — Side by Side
-![SHAP Comparison](SILO maps %26 figures/phase7_shap_comparison.png)
+![SHAP Comparison](https://github.com/Fausty099/SILO-oil-community-risk/blob/a6d7741aa457fb9ecc1a060bbba9b845b09204d8/phase7_shap_comparison.png)
 
 **Edo 2019 (97.8%)** vs **Ondo 2016 (0.7%)** — same model, same features, opposite outcomes. SHAP shows exactly what separates them.
 
@@ -314,7 +314,6 @@ BSc Data Science & Analytics — Level 300
 Ghana Communication Technology University (GCTU), Accra, Ghana
 
 [![GitHub](https://img.shields.io/badge/GitHub-Fausty099-black?logo=github)](https://github.com/Fausty099)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue)](https://portfolio-theta-gilt.vercel.app)
 
 </div>
 
@@ -340,6 +339,6 @@ MIT License — free to use with attribution.
 *SILO is an independent academic research project.*
 *Not affiliated with any oil company, government body, or political organization.*
 
-**⭐ Star this repo if you find it useful**
+
 
 </div>

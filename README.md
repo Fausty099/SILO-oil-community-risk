@@ -79,7 +79,7 @@ That's not just a number. It's a reason. That's what makes SILO actionable.
 ## Key Results
 
 ### Nigeria Gas Flaring Trend (2012–2022)
-![Gas Flaring](SILO maps % figures/nigeria_flaring_trend.png)
+![Gas Flaring](https://github.com/Fausty099/SILO-oil-community-risk/blob/60bc0341ca7cd937971d76330c792f4a47c8e5a9/nigeria_flaring_trend.png)
 
 Nigeria flared **132.40 BCM** of gas over the study period — declining 53% from 15.1 BCM (2012) to 7.1 BCM (2022). Yet community conflict **persisted throughout**. Environmental improvement alone does not restore social trust.
 

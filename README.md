@@ -68,7 +68,7 @@ That's not just a number. It's a reason. That's what makes SILO actionable.
 
 ## Study Area
 
-![Niger Delta Study Area](SILO maps % figures/niger_delta_map.png)
+![Niger Delta Study Area](https://github.com/Fausty099/SILO-oil-community-risk/tree/640077b787d0b0bdfd9c85459ae1a5d8c15e881d/SILO%20maps%20%26%20figures)
 
 **7 Niger Delta States:** Rivers · Delta · Bayelsa · Akwa Ibom · Edo · Imo · Ondo
 **Study Period:** 2012 – 2023

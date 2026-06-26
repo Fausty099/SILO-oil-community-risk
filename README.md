@@ -93,7 +93,7 @@ Rivers State leads in both cumulative flare volume and conflict events — the e
 ---
 
 ### Comprehensive Analysis Dashboard
-![EDA Overview](SILO maps % figures/phase4_eda.png)
+![EDA Overview](https://github.com/Fausty099/SILO-oil-community-risk/blob/758bd986c93a32d92f473eba5e1d8d9421e7312b/phase4_eda.png)
 
 The conflict intensity heatmap (bottom left) reveals **Delta 2016** and **Edo** as the most chronically high-risk cells — validated by real historical events including the Niger Delta Avengers pipeline bombing campaign.
 

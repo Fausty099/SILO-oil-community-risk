@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SILO raw inputs (re-downloadable with `python -m silo.acquire`)
+data/raw/

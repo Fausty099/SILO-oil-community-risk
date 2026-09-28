@@ -1,0 +1,148 @@
+state,year,y_true,model,p
+Akwa Ibom,2017,0,Naive persistence,0.0
+Bayelsa,2017,0,Naive persistence,0.0
+Delta,2017,0,Naive persistence,0.0
+Edo,2017,0,Naive persistence,0.0
+Imo,2017,0,Naive persistence,0.0
+Ondo,2017,1,Naive persistence,0.0
+Rivers,2017,0,Naive persistence,0.0
+Akwa Ibom,2017,0,Historical base rate,0.0
+Bayelsa,2017,0,Historical base rate,0.5
+Delta,2017,0,Historical base rate,0.75
+Edo,2017,0,Historical base rate,0.0
+Imo,2017,0,Historical base rate,0.0
+Ondo,2017,1,Historical base rate,0.0
+Rivers,2017,0,Historical base rate,0.5
+Akwa Ibom,2017,0,Logistic Regression,0.006073440242512434
+Bayelsa,2017,0,Logistic Regression,0.35374883799612195
+Delta,2017,0,Logistic Regression,0.03811046588428189
+Edo,2017,0,Logistic Regression,0.0062748248010396565
+Imo,2017,0,Logistic Regression,0.012957405364374315
+Ondo,2017,1,Logistic Regression,0.002642863105607902
+Rivers,2017,0,Logistic Regression,0.1581697018996362
+Akwa Ibom,2017,0,Random Forest,0.10860056390977446
+Bayelsa,2017,0,Random Forest,0.31237202380952384
+Delta,2017,0,Random Forest,0.3883540050635637
+Edo,2017,0,Random Forest,0.04739697802197803
+Imo,2017,0,Random Forest,0.022285714285714287
+Ondo,2017,1,Random Forest,0.051625000000000004
+Rivers,2017,0,Random Forest,0.40728555268261124
+Akwa Ibom,2017,0,XGBoost,0.022898048162460327
+Bayelsa,2017,0,XGBoost,0.051278285682201385
+Delta,2017,0,XGBoost,0.5328493118286133
+Edo,2017,0,XGBoost,0.03062329813838005
+Imo,2017,0,XGBoost,0.027562720701098442
+Ondo,2017,1,XGBoost,0.017795786261558533
+Rivers,2017,0,XGBoost,0.5915136337280273
+Akwa Ibom,2017,0,SVM (RBF),0.17358965921099112
+Bayelsa,2017,0,SVM (RBF),0.44074500059184385
+Delta,2017,0,SVM (RBF),0.10718276295413443
+Edo,2017,0,SVM (RBF),0.06910134559660303
+Imo,2017,0,SVM (RBF),0.04569073455660783
+Ondo,2017,1,SVM (RBF),0.05943902386823366
+Rivers,2017,0,SVM (RBF),0.16217141773384766
+Akwa Ibom,2017,0,Neural Net (MLP),0.0014116624445931342
+Bayelsa,2017,0,Neural Net (MLP),0.03860446425050448
+Delta,2017,0,Neural Net (MLP),0.00021802076995665852
+Edo,2017,0,Neural Net (MLP),0.012258196050590685
+Imo,2017,0,Neural Net (MLP),0.0007137182409554326
+Ondo,2017,1,Neural Net (MLP),0.001469189991309965
+Rivers,2017,0,Neural Net (MLP),0.0081555053142912
+Akwa Ibom,2018,1,Naive persistence,0.0
+Bayelsa,2018,1,Naive persistence,0.0
+Delta,2018,0,Naive persistence,0.0
+Edo,2018,1,Naive persistence,0.0
+Imo,2018,0,Naive persistence,0.0
+Ondo,2018,0,Naive persistence,1.0
+Rivers,2018,1,Naive persistence,0.0
+Akwa Ibom,2018,1,Historical base rate,0.0
+Bayelsa,2018,1,Historical base rate,0.4
+Delta,2018,0,Historical base rate,0.6
+Edo,2018,1,Historical base rate,0.0
+Imo,2018,0,Historical base rate,0.0
+Ondo,2018,0,Historical base rate,0.2
+Rivers,2018,1,Historical base rate,0.4
+Akwa Ibom,2018,1,Logistic Regression,0.004070341753451566
+Bayelsa,2018,1,Logistic Regression,0.32219113012817346
+Delta,2018,0,Logistic Regression,0.08212794925806875
+Edo,2018,1,Logistic Regression,0.0013948194345522833
+Imo,2018,0,Logistic Regression,0.03884045038945354
+Ondo,2018,0,Logistic Regression,0.18505436408468992
+Rivers,2018,1,Logistic Regression,0.025038176745223385
+Akwa Ibom,2018,1,Random Forest,0.07541601892123181
+Bayelsa,2018,1,Random Forest,0.1814312843561182
+Delta,2018,0,Random Forest,0.3049251660677353
+Edo,2018,1,Random Forest,0.10527303335206784
+Imo,2018,0,Random Forest,0.07467784307788271
+Ondo,2018,0,Random Forest,0.29013006610992376
+Rivers,2018,1,Random Forest,0.19854801271269307
+Akwa Ibom,2018,1,XGBoost,0.010700973682105541
+Bayelsa,2018,1,XGBoost,0.03400029242038727
+Delta,2018,0,XGBoost,0.276909202337265
+Edo,2018,1,XGBoost,0.04133952781558037
+Imo,2018,0,XGBoost,0.03597645089030266
+Ondo,2018,0,XGBoost,0.09191896766424179
+Rivers,2018,1,XGBoost,0.039914436638355255
+Akwa Ibom,2018,1,SVM (RBF),0.06185695149030525
+Bayelsa,2018,1,SVM (RBF),0.13826313637699422
+Delta,2018,0,SVM (RBF),0.11238000031048585
+Edo,2018,1,SVM (RBF),0.06080962680100753
+Imo,2018,0,SVM (RBF),0.050618301055170324
+Ondo,2018,0,SVM (RBF),0.169872157548975
+Rivers,2018,1,SVM (RBF),0.0725454208021037
+Akwa Ibom,2018,1,Neural Net (MLP),0.003947065551731337
+Bayelsa,2018,1,Neural Net (MLP),0.0071297926463497205
+Delta,2018,0,Neural Net (MLP),0.0003305479704407961
+Edo,2018,1,Neural Net (MLP),0.0008651975155399493
+Imo,2018,0,Neural Net (MLP),0.0006608356624704238
+Ondo,2018,0,Neural Net (MLP),0.017549689168028973
+Rivers,2018,1,Neural Net (MLP),3.967966100436555e-05
+Akwa Ibom,2019,0,Naive persistence,1.0
+Bayelsa,2019,1,Naive persistence,1.0
+Delta,2019,1,Naive persistence,0.0
+Edo,2019,1,Naive persistence,1.0
+Imo,2019,1,Naive persistence,0.0
+Ondo,2019,1,Naive persistence,0.0
+Rivers,2019,0,Naive persistence,1.0
+Akwa Ibom,2019,0,Historical base rate,0.16666666666666666
+Bayelsa,2019,1,Historical base rate,0.3333333333333333
+Delta,2019,1,Historical base rate,0.5
+Edo,2019,1,Historical base rate,0.16666666666666666
+Imo,2019,1,Historical base rate,0.0
+Ondo,2019,1,Historical base rate,0.16666666666666666
+Rivers,2019,0,Historical base rate,0.5
+Akwa Ibom,2019,0,Logistic Regression,0.5929296103849904
+Bayelsa,2019,1,Logistic Regression,0.6350823871668281
+Delta,2019,1,Logistic Regression,0.4442925804796594
+Edo,2019,1,Logistic Regression,0.2050646963226357
+Imo,2019,1,Logistic Regression,0.25739085512546045
+Ondo,2019,1,Logistic Regression,0.09467179935154572
+Rivers,2019,0,Logistic Regression,0.2529997826740838
+Akwa Ibom,2019,0,Random Forest,0.47725510808094507
+Bayelsa,2019,1,Random Forest,0.5459564530123706
+Delta,2019,1,Random Forest,0.29356406854566364
+Edo,2019,1,Random Forest,0.36642328843768046
+Imo,2019,1,Random Forest,0.43940487917980375
+Ondo,2019,1,Random Forest,0.32539029417981225
+Rivers,2019,0,Random Forest,0.2806919883789441
+Akwa Ibom,2019,0,XGBoost,0.3210504949092865
+Bayelsa,2019,1,XGBoost,0.27304431796073914
+Delta,2019,1,XGBoost,0.4338044226169586
+Edo,2019,1,XGBoost,0.20319251716136932
+Imo,2019,1,XGBoost,0.20297355949878693
+Ondo,2019,1,XGBoost,0.06324077397584915
+Rivers,2019,0,XGBoost,0.1466553807258606
+Akwa Ibom,2019,0,SVM (RBF),0.2607387225908027
+Bayelsa,2019,1,SVM (RBF),0.3803700733918335
+Delta,2019,1,SVM (RBF),0.2126461885210399
+Edo,2019,1,SVM (RBF),0.28809652491388044
+Imo,2019,1,SVM (RBF),0.22102260525687242
+Ondo,2019,1,SVM (RBF),0.27260453055628364
+Rivers,2019,0,SVM (RBF),0.19063538272718375
+Akwa Ibom,2019,0,Neural Net (MLP),0.4951868938547033
+Bayelsa,2019,1,Neural Net (MLP),0.03035668812637021
+Delta,2019,1,Neural Net (MLP),0.022086613746244838
+Edo,2019,1,Neural Net (MLP),0.373222109974454
+Imo,2019,1,Neural Net (MLP),0.041845590324712606
+Ondo,2019,1,Neural Net (MLP),0.9097274345304281
+Rivers,2019,0,Neural Net (MLP),7.444799109043851e-06

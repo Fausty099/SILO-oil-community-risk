@@ -71,12 +71,21 @@ That's not just a number. It's a reason. That's what makes SILO actionable.
 ![Niger Delta Study Area](https://github.com/Fausty099/SILO-oil-community-risk/blob/cec053679099fe3555c0c9e8c91508be92513ee6/niger_delta_map.png)
 
 **7 Niger Delta States:** Rivers · Delta · Bayelsa · Akwa Ibom · Edo · Imo · Ondo
-**Study Period:** 2012 – 2023
-**Total Observations:** 84 state-year panels
+**Study Period:** 2012 – 2023 (notebook) · 1997 – 2025 conflict panel with 2012 – 2020 site-level flare coverage (scripted pipeline)
+**Total Observations:** 84 state-years (notebook) · 203 state-years 1997–2025, of which 63 carry measured site-level flare data (scripted pipeline)
 
 ---
 
 ## Key Results
+
+> **Status note (see [`docs/REVIEW.md`](docs/REVIEW.md)).** The figures and scores in
+> this section come from the original notebook, whose evaluation was not fully
+> out-of-sample: the label threshold was estimated on the whole panel, the test set
+> was passed to XGBoost as an `eval_set`, and risk scores were produced for rows the
+> model had trained on. The reproducible pipeline in `src/silo/` re-runs the same
+> question with rolling-origin validation and naive baselines; those results are in
+> [`docs/REVIEW.md` §4](docs/REVIEW.md) and are substantially weaker. Treat this
+> section as the v1 record and the review as the current state of evidence.
 
 ### Nigeria Gas Flaring Trend (2012–2022)
 ![Gas Flaring](https://github.com/Fausty099/SILO-oil-community-risk/blob/60bc0341ca7cd937971d76330c792f4a47c8e5a9/nigeria_flaring_trend.png)
@@ -207,6 +216,33 @@ All confirmed SLO erosion cases received risk scores above **94%**.
 
 ---
 
+## Reproducible Pipeline (`src/silo/`)
+
+The notebook is Colab-only and reads hand-uploaded files. `src/silo/` is a scripted
+replacement that downloads its own inputs and can be re-run end to end:
+
+```bash
+pip install -r requirements.txt
+python -m silo.acquire     # ACLED (HDX API), VIIRS flare sites (EOG), GADM v4.1
+python -m silo.pipeline    # panel -> features -> labels -> benchmark -> figures
+pytest                     # 9 tests, incl. a feature-leakage regression test
+```
+
+| Module | Role |
+|---|---|
+| `acquire.py` | Resolves current HDX resource URLs and caches raw inputs |
+| `panel.py` | State x year panel; **point-in-polygon join of individual VIIRS flare sites** onto GADM polygons (replaces fixed per-state flare shares) |
+| `features.py` | Lag / rolling / anomaly features, all computable at time *t* |
+| `labels.py` | SLO-erosion proxy; percentile threshold fitted **inside the training fold** |
+| `evaluate.py` | Naive persistence + historical base-rate baselines, 5-model benchmark, rolling-origin CV, Brier score, reliability curves |
+| `pipeline.py` | Runs everything, writes `outputs/tables/`, `outputs/figures/`, `models/` |
+
+Two specifications are reported: conflict + satellite flaring (2012-2019, the years
+with site-level VIIRS coverage) and conflict history only (2000-2024, far more
+observations).
+
+---
+
 ## Data Sources
 
 | Dataset | Source | Cost |
@@ -224,7 +260,11 @@ All confirmed SLO erosion cases received risk scores above **94%**.
 ```
 SILO-oil-community-risk/
 │
-├── SILO_project.ipynb          ← Main research notebook (Google Colab)
+├── SILO_project.ipynb          ← Original research notebook (Google Colab)
+├── src/silo/                   ← Reproducible pipeline (acquire, panel, features,
+│                                  labels, evaluate, pipeline)
+├── tests/                      ← pytest suite incl. leakage regression test
+├── docs/REVIEW.md              ← Code + proposal review, baselines & calibration results
 │
 ├── data/
 │   ├── raw/
@@ -268,13 +308,20 @@ Phase 8  │  Interactive Risk Map  (Folium choropleth)
 
 Click the badge at the top. Phase 0 installs everything automatically.
 
-**Option 2 — Local**
+**Option 2 — Local (scripted pipeline, no manual uploads)**
 
 ```bash
 git clone https://github.com/Fausty099/SILO-oil-community-risk.git
 cd SILO-oil-community-risk
-pip install geopandas folium xgboost shap plotly scikit-learn pandas numpy matplotlib seaborn
-jupyter notebook SILO_project.ipynb
+pip install -r requirements.txt
+python -m silo.acquire && python -m silo.pipeline
+```
+
+**Option 3 — Local notebook**
+
+```bash
+pip install -r requirements.txt
+jupyter notebook SILO_project.ipynb   # requires the ACLED/PRIMAP files uploaded manually
 ```
 
 ---
